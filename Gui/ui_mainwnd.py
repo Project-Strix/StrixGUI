@@ -17,8 +17,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
     QMainWindow, QMenuBar, QPushButton, QSizePolicy,
-    QSpacerItem, QStackedWidget, QStatusBar, QVBoxLayout,
-    QWidget)
+    QSpacerItem, QStackedWidget, QStatusBar, QToolButton,
+    QVBoxLayout, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -65,6 +65,20 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addItem(self.verticalSpacer)
 
+        self.gridLayout_3 = QGridLayout()
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.gridLayout_3.setContentsMargins(5, 5, 5, 5)
+        self.settingToolButton = QToolButton(self.centralwidget)
+        self.settingToolButton.setObjectName(u"settingToolButton")
+        icon = QIcon()
+        icon.addFile(u"D:\\projects\\Strix_GUI\\StrixGUI\\Gui\\res\\configuration-2.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.settingToolButton.setIcon(icon)
+
+        self.gridLayout_3.addWidget(self.settingToolButton, 0, 0, 1, 1)
+
+
+        self.verticalLayout.addLayout(self.gridLayout_3)
+
 
         self.horizontalLayout.addLayout(self.verticalLayout)
 
@@ -94,7 +108,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 2068, 45))
+        self.menubar.setGeometry(QRect(0, 0, 2068, 19))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -114,5 +128,6 @@ class Ui_MainWindow(object):
         self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
         self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
         self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
+        self.settingToolButton.setText(QCoreApplication.translate("MainWindow", u"...", None))
     # retranslateUi
 
