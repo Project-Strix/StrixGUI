@@ -76,7 +76,7 @@
           </spacer>
          </item>
          <item row="2" column="2">
-          <widget class="QRadioButton" name="radioButton_17">
+          <widget class="QRadioButton" name="dim25dRadioButton">
            <property name="text">
             <string>2.5D（C * W * H *3）</string>
            </property>
@@ -96,7 +96,7 @@
           </spacer>
          </item>
          <item row="2" column="3">
-          <widget class="QRadioButton" name="radioButton_18">
+          <widget class="QRadioButton" name="dim3dRadioButton">
            <property name="text">
             <string>3D（C * W * H * S）</string>
            </property>
@@ -110,7 +110,7 @@
           </widget>
          </item>
          <item row="0" column="1">
-          <widget class="QLineEdit" name="lineEdit_3"/>
+          <widget class="QLineEdit" name="imageKeyLineEdit"/>
          </item>
          <item row="1" column="0">
           <widget class="QLabel" name="label_16">
@@ -126,7 +126,7 @@
           </widget>
          </item>
          <item row="1" column="1">
-          <widget class="QComboBox" name="comboBox_8">
+          <widget class="QComboBox" name="imageTypeComboBox">
            <item>
             <property name="text">
              <string>float32</string>
@@ -135,13 +135,13 @@
           </widget>
          </item>
          <item row="0" column="4">
-          <widget class="QLineEdit" name="lineEdit_4"/>
+          <widget class="QLineEdit" name="maskKeyLineEdit"/>
          </item>
          <item row="1" column="4">
-          <widget class="QComboBox" name="comboBox_7"/>
+          <widget class="QComboBox" name="labelTypeComboBox"/>
          </item>
          <item row="2" column="1">
-          <widget class="QRadioButton" name="radioButton_16">
+          <widget class="QRadioButton" name="dim2dRadioButton">
            <property name="text">
             <string>2D（C * W * H）</string>
            </property>
@@ -223,7 +223,7 @@
         </widget>
        </item>
        <item row="1" column="5" colspan="2">
-        <widget class="QCheckBox" name="checkBox_3">
+        <widget class="QCheckBox" name="sameLoadAsImageCheckBox">
          <property name="maximumSize">
           <size>
            <width>400</width>
@@ -231,7 +231,7 @@
           </size>
          </property>
          <property name="text">
-          <string>图像与标注加载方法相同</string>
+          <string>标注与图像加载方法相同</string>
          </property>
         </widget>
        </item>
@@ -243,7 +243,7 @@
         </widget>
        </item>
        <item row="1" column="2" colspan="3">
-        <widget class="QComboBox" name="comboBox_6"/>
+        <widget class="QComboBox" name="imageLoadFuncNameComboBox"/>
        </item>
        <item row="1" column="1">
         <widget class="QLabel" name="label_10">
@@ -259,7 +259,7 @@
         </widget>
        </item>
        <item row="2" column="2" colspan="3">
-        <widget class="QComboBox" name="comboBox_5"/>
+        <widget class="QComboBox" name="labelLoadFuncNameComboBox"/>
        </item>
       </layout>
      </item>
@@ -292,37 +292,37 @@
           <number>5</number>
          </property>
          <item>
-          <widget class="QCheckBox" name="checkBox">
+          <widget class="QToolButton" name="channelOperToolButton">
            <property name="text">
-            <string>数据通道操作</string>
+            <string>+数据通道操作</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_9">
+          <widget class="QToolButton" name="orienTransToolButton">
            <property name="text">
-            <string>方位转换</string>
+            <string>+方位转换</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_10">
+          <widget class="QToolButton" name="imageCropToolButton">
            <property name="text">
-            <string>图像裁剪增补</string>
+            <string>+图像裁剪增补</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_11">
+          <widget class="QToolButton" name="imageNormToolButton">
            <property name="text">
-            <string>图像归一化</string>
+            <string>+图像归一化</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_12">
+          <widget class="QToolButton" name="dataAugToolButton">
            <property name="text">
-            <string>数据扩增</string>
+            <string>+数据扩增</string>
            </property>
           </widget>
          </item>
@@ -343,7 +343,7 @@
           <number>5</number>
          </property>
          <item>
-          <widget class="QListWidget" name="listWidget"/>
+          <widget class="QListWidget" name="operItemsListWidget"/>
          </item>
          <item>
           <layout class="QGridLayout" name="gridLayout">
@@ -360,7 +360,7 @@
             <number>5</number>
            </property>
            <item row="0" column="0">
-            <widget class="QToolButton" name="toolButton">
+            <widget class="QToolButton" name="addToolButton">
              <property name="text">
               <string>...</string>
              </property>
@@ -371,7 +371,7 @@
             </widget>
            </item>
            <item row="3" column="0">
-            <widget class="QToolButton" name="toolButton_2">
+            <widget class="QToolButton" name="downToolButton">
              <property name="text">
               <string>...</string>
              </property>
@@ -382,7 +382,7 @@
             </widget>
            </item>
            <item row="2" column="0">
-            <widget class="QToolButton" name="toolButton_3">
+            <widget class="QToolButton" name="upToolButton">
              <property name="text">
               <string>...</string>
              </property>
@@ -406,7 +406,7 @@
             </spacer>
            </item>
            <item row="1" column="0">
-            <widget class="QToolButton" name="toolButton_4">
+            <widget class="QToolButton" name="deleteToolButton">
              <property name="text">
               <string>...</string>
              </property>

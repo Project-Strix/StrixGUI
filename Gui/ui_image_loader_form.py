@@ -43,29 +43,29 @@ class Ui_imageLoaderForm(object):
 
         self.gridLayout_4.addItem(self.horizontalSpacer, 1, 2, 1, 1)
 
-        self.radioButton_17 = QRadioButton(imageLoaderForm)
-        self.radioButton_17.setObjectName(u"radioButton_17")
+        self.dim25dRadioButton = QRadioButton(imageLoaderForm)
+        self.dim25dRadioButton.setObjectName(u"dim25dRadioButton")
 
-        self.gridLayout_4.addWidget(self.radioButton_17, 2, 2, 1, 1)
+        self.gridLayout_4.addWidget(self.dim25dRadioButton, 2, 2, 1, 1)
 
         self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.gridLayout_4.addItem(self.horizontalSpacer_2, 0, 5, 1, 1)
 
-        self.radioButton_18 = QRadioButton(imageLoaderForm)
-        self.radioButton_18.setObjectName(u"radioButton_18")
+        self.dim3dRadioButton = QRadioButton(imageLoaderForm)
+        self.dim3dRadioButton.setObjectName(u"dim3dRadioButton")
 
-        self.gridLayout_4.addWidget(self.radioButton_18, 2, 3, 1, 1)
+        self.gridLayout_4.addWidget(self.dim3dRadioButton, 2, 3, 1, 1)
 
         self.label_17 = QLabel(imageLoaderForm)
         self.label_17.setObjectName(u"label_17")
 
         self.gridLayout_4.addWidget(self.label_17, 2, 0, 1, 1)
 
-        self.lineEdit_3 = QLineEdit(imageLoaderForm)
-        self.lineEdit_3.setObjectName(u"lineEdit_3")
+        self.imageKeyLineEdit = QLineEdit(imageLoaderForm)
+        self.imageKeyLineEdit.setObjectName(u"imageKeyLineEdit")
 
-        self.gridLayout_4.addWidget(self.lineEdit_3, 0, 1, 1, 1)
+        self.gridLayout_4.addWidget(self.imageKeyLineEdit, 0, 1, 1, 1)
 
         self.label_16 = QLabel(imageLoaderForm)
         self.label_16.setObjectName(u"label_16")
@@ -73,26 +73,26 @@ class Ui_imageLoaderForm(object):
 
         self.gridLayout_4.addWidget(self.label_16, 1, 0, 1, 1)
 
-        self.comboBox_8 = QComboBox(imageLoaderForm)
-        self.comboBox_8.addItem("")
-        self.comboBox_8.setObjectName(u"comboBox_8")
+        self.imageTypeComboBox = QComboBox(imageLoaderForm)
+        self.imageTypeComboBox.addItem("")
+        self.imageTypeComboBox.setObjectName(u"imageTypeComboBox")
 
-        self.gridLayout_4.addWidget(self.comboBox_8, 1, 1, 1, 1)
+        self.gridLayout_4.addWidget(self.imageTypeComboBox, 1, 1, 1, 1)
 
-        self.lineEdit_4 = QLineEdit(imageLoaderForm)
-        self.lineEdit_4.setObjectName(u"lineEdit_4")
+        self.maskKeyLineEdit = QLineEdit(imageLoaderForm)
+        self.maskKeyLineEdit.setObjectName(u"maskKeyLineEdit")
 
-        self.gridLayout_4.addWidget(self.lineEdit_4, 0, 4, 1, 1)
+        self.gridLayout_4.addWidget(self.maskKeyLineEdit, 0, 4, 1, 1)
 
-        self.comboBox_7 = QComboBox(imageLoaderForm)
-        self.comboBox_7.setObjectName(u"comboBox_7")
+        self.labelTypeComboBox = QComboBox(imageLoaderForm)
+        self.labelTypeComboBox.setObjectName(u"labelTypeComboBox")
 
-        self.gridLayout_4.addWidget(self.comboBox_7, 1, 4, 1, 1)
+        self.gridLayout_4.addWidget(self.labelTypeComboBox, 1, 4, 1, 1)
 
-        self.radioButton_16 = QRadioButton(imageLoaderForm)
-        self.radioButton_16.setObjectName(u"radioButton_16")
+        self.dim2dRadioButton = QRadioButton(imageLoaderForm)
+        self.dim2dRadioButton.setObjectName(u"dim2dRadioButton")
 
-        self.gridLayout_4.addWidget(self.radioButton_16, 2, 1, 1, 1)
+        self.gridLayout_4.addWidget(self.dim2dRadioButton, 2, 1, 1, 1)
 
         self.label_13 = QLabel(imageLoaderForm)
         self.label_13.setObjectName(u"label_13")
@@ -137,11 +137,11 @@ class Ui_imageLoaderForm(object):
 
         self.gridLayout_2.addWidget(self.label_12, 2, 1, 1, 1)
 
-        self.checkBox_3 = QCheckBox(imageLoaderForm)
-        self.checkBox_3.setObjectName(u"checkBox_3")
-        self.checkBox_3.setMaximumSize(QSize(400, 16777215))
+        self.sameLoadAsImageCheckBox = QCheckBox(imageLoaderForm)
+        self.sameLoadAsImageCheckBox.setObjectName(u"sameLoadAsImageCheckBox")
+        self.sameLoadAsImageCheckBox.setMaximumSize(QSize(400, 16777215))
 
-        self.gridLayout_2.addWidget(self.checkBox_3, 1, 5, 1, 2)
+        self.gridLayout_2.addWidget(self.sameLoadAsImageCheckBox, 1, 5, 1, 2)
 
         self.line_2 = QFrame(imageLoaderForm)
         self.line_2.setObjectName(u"line_2")
@@ -150,10 +150,10 @@ class Ui_imageLoaderForm(object):
 
         self.gridLayout_2.addWidget(self.line_2, 3, 7, 1, 1)
 
-        self.comboBox_6 = QComboBox(imageLoaderForm)
-        self.comboBox_6.setObjectName(u"comboBox_6")
+        self.imageLoadFuncNameComboBox = QComboBox(imageLoaderForm)
+        self.imageLoadFuncNameComboBox.setObjectName(u"imageLoadFuncNameComboBox")
 
-        self.gridLayout_2.addWidget(self.comboBox_6, 1, 2, 1, 3)
+        self.gridLayout_2.addWidget(self.imageLoadFuncNameComboBox, 1, 2, 1, 3)
 
         self.label_10 = QLabel(imageLoaderForm)
         self.label_10.setObjectName(u"label_10")
@@ -161,10 +161,10 @@ class Ui_imageLoaderForm(object):
 
         self.gridLayout_2.addWidget(self.label_10, 1, 1, 1, 1)
 
-        self.comboBox_5 = QComboBox(imageLoaderForm)
-        self.comboBox_5.setObjectName(u"comboBox_5")
+        self.labelLoadFuncNameComboBox = QComboBox(imageLoaderForm)
+        self.labelLoadFuncNameComboBox.setObjectName(u"labelLoadFuncNameComboBox")
 
-        self.gridLayout_2.addWidget(self.comboBox_5, 2, 2, 1, 3)
+        self.gridLayout_2.addWidget(self.labelLoadFuncNameComboBox, 2, 2, 1, 3)
 
 
         self.verticalLayout_9.addLayout(self.gridLayout_2)
@@ -175,30 +175,30 @@ class Ui_imageLoaderForm(object):
         self.verticalLayout_2 = QVBoxLayout()
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout_2.setContentsMargins(5, 5, 5, 5)
-        self.checkBox = QCheckBox(imageLoaderForm)
-        self.checkBox.setObjectName(u"checkBox")
+        self.channelOperToolButton = QToolButton(imageLoaderForm)
+        self.channelOperToolButton.setObjectName(u"channelOperToolButton")
 
-        self.verticalLayout_2.addWidget(self.checkBox)
+        self.verticalLayout_2.addWidget(self.channelOperToolButton)
 
-        self.checkBox_9 = QCheckBox(imageLoaderForm)
-        self.checkBox_9.setObjectName(u"checkBox_9")
+        self.orienTransToolButton = QToolButton(imageLoaderForm)
+        self.orienTransToolButton.setObjectName(u"orienTransToolButton")
 
-        self.verticalLayout_2.addWidget(self.checkBox_9)
+        self.verticalLayout_2.addWidget(self.orienTransToolButton)
 
-        self.checkBox_10 = QCheckBox(imageLoaderForm)
-        self.checkBox_10.setObjectName(u"checkBox_10")
+        self.imageCropToolButton = QToolButton(imageLoaderForm)
+        self.imageCropToolButton.setObjectName(u"imageCropToolButton")
 
-        self.verticalLayout_2.addWidget(self.checkBox_10)
+        self.verticalLayout_2.addWidget(self.imageCropToolButton)
 
-        self.checkBox_11 = QCheckBox(imageLoaderForm)
-        self.checkBox_11.setObjectName(u"checkBox_11")
+        self.imageNormToolButton = QToolButton(imageLoaderForm)
+        self.imageNormToolButton.setObjectName(u"imageNormToolButton")
 
-        self.verticalLayout_2.addWidget(self.checkBox_11)
+        self.verticalLayout_2.addWidget(self.imageNormToolButton)
 
-        self.checkBox_12 = QCheckBox(imageLoaderForm)
-        self.checkBox_12.setObjectName(u"checkBox_12")
+        self.dataAugToolButton = QToolButton(imageLoaderForm)
+        self.dataAugToolButton.setObjectName(u"dataAugToolButton")
 
-        self.verticalLayout_2.addWidget(self.checkBox_12)
+        self.verticalLayout_2.addWidget(self.dataAugToolButton)
 
 
         self.horizontalLayout.addLayout(self.verticalLayout_2)
@@ -206,49 +206,49 @@ class Ui_imageLoaderForm(object):
         self.horizontalLayout_2 = QHBoxLayout()
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.horizontalLayout_2.setContentsMargins(5, 5, 5, 5)
-        self.listWidget = QListWidget(imageLoaderForm)
-        self.listWidget.setObjectName(u"listWidget")
+        self.operItemsListWidget = QListWidget(imageLoaderForm)
+        self.operItemsListWidget.setObjectName(u"operItemsListWidget")
 
-        self.horizontalLayout_2.addWidget(self.listWidget)
+        self.horizontalLayout_2.addWidget(self.operItemsListWidget)
 
         self.gridLayout = QGridLayout()
         self.gridLayout.setObjectName(u"gridLayout")
         self.gridLayout.setContentsMargins(5, 5, 5, 5)
-        self.toolButton = QToolButton(imageLoaderForm)
-        self.toolButton.setObjectName(u"toolButton")
+        self.addToolButton = QToolButton(imageLoaderForm)
+        self.addToolButton.setObjectName(u"addToolButton")
         icon = QIcon()
         icon.addFile(u"E:/icon/icons8-plus-math-40.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.toolButton.setIcon(icon)
+        self.addToolButton.setIcon(icon)
 
-        self.gridLayout.addWidget(self.toolButton, 0, 0, 1, 1)
+        self.gridLayout.addWidget(self.addToolButton, 0, 0, 1, 1)
 
-        self.toolButton_2 = QToolButton(imageLoaderForm)
-        self.toolButton_2.setObjectName(u"toolButton_2")
+        self.downToolButton = QToolButton(imageLoaderForm)
+        self.downToolButton.setObjectName(u"downToolButton")
         icon1 = QIcon()
         icon1.addFile(u"E:/icon/down.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.toolButton_2.setIcon(icon1)
+        self.downToolButton.setIcon(icon1)
 
-        self.gridLayout.addWidget(self.toolButton_2, 3, 0, 1, 1)
+        self.gridLayout.addWidget(self.downToolButton, 3, 0, 1, 1)
 
-        self.toolButton_3 = QToolButton(imageLoaderForm)
-        self.toolButton_3.setObjectName(u"toolButton_3")
+        self.upToolButton = QToolButton(imageLoaderForm)
+        self.upToolButton.setObjectName(u"upToolButton")
         icon2 = QIcon()
         icon2.addFile(u"E:/icon/up.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.toolButton_3.setIcon(icon2)
+        self.upToolButton.setIcon(icon2)
 
-        self.gridLayout.addWidget(self.toolButton_3, 2, 0, 1, 1)
+        self.gridLayout.addWidget(self.upToolButton, 2, 0, 1, 1)
 
         self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
         self.gridLayout.addItem(self.verticalSpacer, 4, 0, 1, 1)
 
-        self.toolButton_4 = QToolButton(imageLoaderForm)
-        self.toolButton_4.setObjectName(u"toolButton_4")
+        self.deleteToolButton = QToolButton(imageLoaderForm)
+        self.deleteToolButton.setObjectName(u"deleteToolButton")
         icon3 = QIcon()
         icon3.addFile(u"E:/icon/delete.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.toolButton_4.setIcon(icon3)
+        self.deleteToolButton.setIcon(icon3)
 
-        self.gridLayout.addWidget(self.toolButton_4, 1, 0, 1, 1)
+        self.gridLayout.addWidget(self.deleteToolButton, 1, 0, 1, 1)
 
 
         self.horizontalLayout_2.addLayout(self.gridLayout)
@@ -340,30 +340,30 @@ class Ui_imageLoaderForm(object):
 
     def retranslateUi(self, imageLoaderForm):
         imageLoaderForm.setWindowTitle(QCoreApplication.translate("imageLoaderForm", u"Form", None))
-        self.radioButton_17.setText(QCoreApplication.translate("imageLoaderForm", u"2.5D\uff08C * W * H *3\uff09", None))
-        self.radioButton_18.setText(QCoreApplication.translate("imageLoaderForm", u"3D\uff08C * W * H * S\uff09", None))
+        self.dim25dRadioButton.setText(QCoreApplication.translate("imageLoaderForm", u"2.5D\uff08C * W * H *3\uff09", None))
+        self.dim3dRadioButton.setText(QCoreApplication.translate("imageLoaderForm", u"3D\uff08C * W * H * S\uff09", None))
         self.label_17.setText(QCoreApplication.translate("imageLoaderForm", u"\u7ef4\u5ea6\uff1a", None))
         self.label_16.setText(QCoreApplication.translate("imageLoaderForm", u"\u56fe\u50cf\u7c7b\u578b\uff1a", None))
-        self.comboBox_8.setItemText(0, QCoreApplication.translate("imageLoaderForm", u"float32", None))
+        self.imageTypeComboBox.setItemText(0, QCoreApplication.translate("imageLoaderForm", u"float32", None))
 
-        self.radioButton_16.setText(QCoreApplication.translate("imageLoaderForm", u"2D\uff08C * W * H\uff09", None))
+        self.dim2dRadioButton.setText(QCoreApplication.translate("imageLoaderForm", u"2D\uff08C * W * H\uff09", None))
         self.label_13.setText(QCoreApplication.translate("imageLoaderForm", u"\u6807\u6ce8\u7c7b\u578b\uff1a", None))
         self.label_15.setText(QCoreApplication.translate("imageLoaderForm", u"ImageKey\uff1a", None))
         self.label_14.setText(QCoreApplication.translate("imageLoaderForm", u"MaskKey\uff1a", None))
         self.label_24.setText(QCoreApplication.translate("imageLoaderForm", u"\u6570\u636e\u52a0\u8f7d", None))
         self.label_11.setText(QCoreApplication.translate("imageLoaderForm", u"\uff08\u901a\u9053\u6570\u5728\u7b2c\u4e00\u7ef4\uff09", None))
         self.label_12.setText(QCoreApplication.translate("imageLoaderForm", u"\u6807\u6ce8\uff1a", None))
-        self.checkBox_3.setText(QCoreApplication.translate("imageLoaderForm", u"\u56fe\u50cf\u4e0e\u6807\u6ce8\u52a0\u8f7d\u65b9\u6cd5\u76f8\u540c", None))
+        self.sameLoadAsImageCheckBox.setText(QCoreApplication.translate("imageLoaderForm", u"\u6807\u6ce8\u4e0e\u56fe\u50cf\u52a0\u8f7d\u65b9\u6cd5\u76f8\u540c", None))
         self.label_10.setText(QCoreApplication.translate("imageLoaderForm", u"\u56fe\u50cf\uff1a", None))
-        self.checkBox.setText(QCoreApplication.translate("imageLoaderForm", u"\u6570\u636e\u901a\u9053\u64cd\u4f5c", None))
-        self.checkBox_9.setText(QCoreApplication.translate("imageLoaderForm", u"\u65b9\u4f4d\u8f6c\u6362", None))
-        self.checkBox_10.setText(QCoreApplication.translate("imageLoaderForm", u"\u56fe\u50cf\u88c1\u526a\u589e\u8865", None))
-        self.checkBox_11.setText(QCoreApplication.translate("imageLoaderForm", u"\u56fe\u50cf\u5f52\u4e00\u5316", None))
-        self.checkBox_12.setText(QCoreApplication.translate("imageLoaderForm", u"\u6570\u636e\u6269\u589e", None))
-        self.toolButton.setText(QCoreApplication.translate("imageLoaderForm", u"...", None))
-        self.toolButton_2.setText(QCoreApplication.translate("imageLoaderForm", u"...", None))
-        self.toolButton_3.setText(QCoreApplication.translate("imageLoaderForm", u"...", None))
-        self.toolButton_4.setText(QCoreApplication.translate("imageLoaderForm", u"...", None))
+        self.channelOperToolButton.setText(QCoreApplication.translate("imageLoaderForm", u"+\u6570\u636e\u901a\u9053\u64cd\u4f5c", None))
+        self.orienTransToolButton.setText(QCoreApplication.translate("imageLoaderForm", u"+\u65b9\u4f4d\u8f6c\u6362", None))
+        self.imageCropToolButton.setText(QCoreApplication.translate("imageLoaderForm", u"+\u56fe\u50cf\u88c1\u526a\u589e\u8865", None))
+        self.imageNormToolButton.setText(QCoreApplication.translate("imageLoaderForm", u"+\u56fe\u50cf\u5f52\u4e00\u5316", None))
+        self.dataAugToolButton.setText(QCoreApplication.translate("imageLoaderForm", u"+\u6570\u636e\u6269\u589e", None))
+        self.addToolButton.setText(QCoreApplication.translate("imageLoaderForm", u"...", None))
+        self.downToolButton.setText(QCoreApplication.translate("imageLoaderForm", u"...", None))
+        self.upToolButton.setText(QCoreApplication.translate("imageLoaderForm", u"...", None))
+        self.deleteToolButton.setText(QCoreApplication.translate("imageLoaderForm", u"...", None))
         self.pushButton_2.setText(QCoreApplication.translate("imageLoaderForm", u"\u6dfb\u52a0", None))
         self.pushButton.setText(QCoreApplication.translate("imageLoaderForm", u"\u5b8c\u6210", None))
         self.currentStepInfo_2.setText(QCoreApplication.translate("imageLoaderForm", u"Output\uff1a", None))
