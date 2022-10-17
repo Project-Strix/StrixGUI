@@ -4,6 +4,16 @@ from monai.utils import enums
 
 
 def phase_arguments(func, phase_all_args: bool = True):
+    """Phase function's arguments and return a structured dict.
+
+    Args:
+        func: Target function.
+        phase_all_args (bool, optional): whether to phase all arguments.
+            If False, phaser will skip arguments with default value given. Defaults to True.
+
+    Returns:
+        dict: a structured arguments dict.
+    """
     sig = inspect.signature(func)
     anno = inspect.getfullargspec(func).annotations
     if not phase_all_args:

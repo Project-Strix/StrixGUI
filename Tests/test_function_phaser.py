@@ -11,19 +11,24 @@ pytest, has_pytest = optional_import("pytest")
 
 from ..Utils.function_phaser import phase_arguments
 
+expected1 = {
+    'arg_1': {'type': int, 'default': None, 'is_optional': True, 'candidates': []}, 
+    'arg_2': {'type': bool, 'default': None, 'is_optional': True, 'candidates': []},
+    'arg_3': {'type': str, 'default': 'hello', 'is_optional': False, 'candidates': []}
+}
+expected2 = {
+    'arg_1': {'type': int, 'default': None, 'is_optional': True, 'candidates': []},
+    'arg_2': {'type': bool, 'default': None, 'is_optional': True, 'candidates': []}
+}
 
-def test_general_function_parsing():
+@pytest.mark.parametrize("phase_all, expected", [(True, expected1), (False, expected2)])
+def test_general_function_parsing(phase_all, expected):
 
     def target_func(arg_1: int, arg_2: bool, arg_3: str = "hello"):
         pass
     
-    expected = {
-        'arg_1': {'type': int, 'default': None, 'is_optional': True, 'candidates': []}, 
-        'arg_2': {'type': bool, 'default': None, 'is_optional': True, 'candidates': []},
-        'arg_3': {'type': str, 'default': 'hello', 'is_optional': False, 'candidates': []}
-    }
 
-    ret = phase_arguments(target_func)
+    ret = phase_arguments(target_func, phase_all)
     assert ret == expected
 
 
